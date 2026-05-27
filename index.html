@@ -232,6 +232,73 @@
     .section { padding:48px; }
     .cover-inner { padding:48px; }
   }
+
+  /* ===== MOBILE RESPONSIVE ===== */
+  @media (max-width: 680px) {
+    .cover-inner { padding: 32px 24px 28px; }
+    .cover-title { font-size: 22px; }
+    .cover-logo-area { margin-bottom: 28px; }
+    .cover-bottom { flex-direction: column; gap: 12px; }
+
+    .photo-banner { grid-template-columns: 1fr; height: 180px; }
+    .photo-banner img:nth-child(2),
+    .photo-banner img:nth-child(3) { display: none; }
+
+    .section { padding: 36px 20px; }
+    .section-header { gap: 12px; }
+    .section-titles h2 { font-size: 18px; }
+
+    .problem-grid { grid-template-columns: 1fr; gap: 12px; }
+    .problem-card .stat { font-size: 28px; }
+
+    .two-col { grid-template-columns: 1fr; gap: 16px; }
+
+    .flow-steps { grid-template-columns: 1fr 1fr; gap: 20px; row-gap: 28px; }
+    .flow-steps::before { display: none; }
+
+    .plan-label-tag { font-size: 12px; padding: 6px 12px; }
+    .plan-table { font-size: 11px; }
+    .plan-table thead th { padding: 8px 6px; font-size: 10px; }
+    .plan-table tbody td { padding: 8px 6px; }
+    .plan-table .price { font-size: 13px; }
+
+    .sample-box { padding: 18px 16px; }
+    .sample-row { flex-direction: column; gap: 2px; }
+    .sample-row .val.big { font-size: 18px; }
+
+    .seminar-cards { grid-template-columns: 1fr; gap: 20px; }
+    .seminar-card-header { flex-direction: column; gap: 12px; }
+    .seminar-card-header .book-img { width: 60px; }
+    .seminar-price-row { flex-direction: row; }
+
+    .evidence-grid { grid-template-columns: 1fr; gap: 12px; }
+    .evidence-card .big-num { font-size: 32px; }
+
+    .authority-box { grid-template-columns: 1fr; gap: 20px; }
+    .authority-img { width: 140px; height: 175px; }
+
+    .cta-section { padding: 40px 20px; }
+    .cta-grid { grid-template-columns: 1fr; gap: 12px; }
+    .cta-tel { font-size: 22px; }
+
+    .footer { flex-direction: column; gap: 12px; padding: 24px 20px; text-align: center; }
+    .footer .footer-info { text-align: center; }
+
+    .bonus-box { flex-direction: column; gap: 12px; padding: 20px 16px; }
+    .bonus-badge { writing-mode: horizontal-tb; padding: 6px 16px; width: fit-content; }
+    .bonus-content h4 { font-size: 15px; }
+
+    .service-card-header h3 { font-size: 14px; }
+    .service-card-body { padding: 16px; }
+
+    .plan-section-label { flex-direction: column; gap: 6px; align-items: flex-start; }
+  }
+
+  @media (max-width: 400px) {
+    .cover-title { font-size: 19px; }
+    .flow-steps { grid-template-columns: 1fr; }
+  }
+
 </style>
 </head>
 <body>
